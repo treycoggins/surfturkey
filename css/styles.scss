@@ -1,8 +1,8 @@
 $background-color: #0f4d7c;
-$primary-color: #CDAC81;
+$primary-color: #b89600;
 $secondary-color: #3C8DAD;
 $tertiary-color: #f3e2d3;
-$accent-color: #cf4040;
+$accent-color: #ca4c4c;
 
 $primary-font: 'Work Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $accent-font: 'Jura', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -28,11 +28,22 @@ body {
   font-weight: 700; 
   font-size: 2rem;
   border: none;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+
+#logo {
+  margin: 20px 20px 0 20px;
+  height: 90px;
+  width: 90px;
+  transform: scaleX(-1) rotateZ(10deg);
+
 }
 
 .nav {
-  
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: $background-color;
   
@@ -40,9 +51,10 @@ body {
 
   &__list {
     display: flex;
-    align-items: baseline; 
-    gap: 4rem;     
-
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
   }
 
   .social-icons {
@@ -51,18 +63,23 @@ body {
   }
 
   &__item {
+    align-self: flex-start;
     color: $primary-color;
     font-size: 1.8rem;
     list-style-type: none;
+    font-weight: 700;
   }
 
   &__link {
+    align-items: center;
+    justify-content: center;
     color: $primary-color;
     text-decoration: none;
     font-family: $accent-font;
     font-size: 1.2rem;
     
     span {
+      align-self: flex-start;
       color: $primary-color;
       font-size: 1.2rem;
     }

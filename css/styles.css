@@ -13,16 +13,30 @@ body {
 
 #nav__logo {
   font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #cf4040;
+  color: #ca4c4c;
   font-weight: 700;
   font-size: 2rem;
   border: none;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+
+#logo {
+  margin: 20px 20px 0 20px;
+  height: 90px;
+  width: 90px;
+  -webkit-transform: scaleX(-1) rotateZ(10deg);
+          transform: scaleX(-1) rotateZ(10deg);
 }
 
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -33,9 +47,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 4rem;
 }
 
@@ -45,20 +65,31 @@ body {
 }
 
 .nav__item {
-  color: #CDAC81;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #b89600;
   font-size: 1.8rem;
   list-style-type: none;
+  font-weight: 700;
 }
 
 .nav__link {
-  color: #CDAC81;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #b89600;
   text-decoration: none;
   font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;
 }
 
 .nav__link span {
-  color: #CDAC81;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #b89600;
   font-size: 1.2rem;
 }
 
@@ -83,7 +114,7 @@ body {
 
 .main__title {
   font-size: 3rem;
-  color: #CDAC81;
+  color: #b89600;
   font-family: 'Work Sans', sans-serif;
   margin: 10rem;
 }
@@ -152,7 +183,7 @@ body {
 
 .contact__form-button {
   padding: 1.6rem;
-  background: #cf4040;
+  background: #ca4c4c;
   color: #f3e2d3;
   font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.8rem;
