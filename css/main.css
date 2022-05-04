@@ -11,11 +11,11 @@ body {
   font-size: 62.5%;
 }
 
-#nav__logo {
+#nav__title {
   font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ca4c4c;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   border: none;
   position: absolute;
   top: 40px;
@@ -23,11 +23,11 @@ body {
 }
 
 #logo {
-  margin: 20px 20px 0 20px;
   height: 90px;
   width: 90px;
   -webkit-transform: scaleX(-1) rotateZ(10deg);
           transform: scaleX(-1) rotateZ(10deg);
+  margin: 20px 20px 0 20px;
 }
 
 .nav {
@@ -47,39 +47,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 4rem;
-}
-
-.nav .social-icons {
-  gap: 1rem;
-  margin-right: 1rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 6rem;
 }
 
 .nav__item {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   color: #b89600;
   font-size: 1.8rem;
   list-style-type: none;
   font-weight: 700;
+  gap: 4rem;
 }
 
 .nav__link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #b89600;
   text-decoration: none;
   font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -87,14 +69,21 @@ body {
 }
 
 .nav__link span {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   color: #b89600;
   font-size: 1.2rem;
 }
 
 .nav__link span:hover {
-  border-bottom: 2px solid #3C8DAD;
+  border-top: 2px solid #ca4c4c;
+}
+
+.social-icons {
+  margin-right: 1rem;
+  gap: 1rem;
+}
+
+.social-icons i {
+  color: #ca4c4c;
 }
 
 .main {
@@ -104,9 +93,6 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -128,6 +114,19 @@ body {
   width: 420px;
   margin: 100px;
   border-radius: 20px;
+}
+
+.main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  gap: 4rem;
+  margin: 0;
 }
 
 .contact {
@@ -209,4 +208,4 @@ body {
   font-size: 2rem;
   color: #f3e2d3;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

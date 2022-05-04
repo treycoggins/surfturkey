@@ -5,50 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>surfturkey.net</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Work+Sans:wght@100;200;300;500&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
   </head>
 
   <body>
 
     <!-----------------NAV BAR --------------------->
       <nav class="nav">
-        <ul class="nav__list">
+        <div class="nav__list">
           <img id="logo" src="img/surfturkey.png">
-          <a class="nav__link" href="#"><span id="nav__logo">Surfturkey.net</span></a>
+          <a class="nav__link" href="#"><span id="nav__title">Surfturkey.net</span></a>
+        </div>
+        <div>
+        <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#"><span>Projects</span></a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="blog.html"><span>Blog</span></a>
-          </li>
           <li class="nav__item">
             <a class="nav__link" href="#"><span>About</span></a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#"><span id="contactBtn">Contact</span></a
-            >
+            <a class="nav__link" href="contact.php"><span id="contactBtn">Contact</span></a>
           </li>
-
-          <!--Social Icons-->
         </ul>
-        <ul class="nav__list social-icons">
+        </div>
+
+        <div>
+           <!--Social Icons-->
+        <ul class="nav__list  social-icons">
           <li class="nav__item">
             <a href="https://www.facebook.com/umontrey" target="_blank">
               <i class="fa fa-facebook nav__item"></i>
             </a>
           </li>
           <li class="nav__item">
-            <a
-              href="https://www.linkedin.com/in/trey-coggins-b0b185157/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/trey-coggins-b0b185157/"target="_blank">
               <i class="fa fa-linkedin nav__item"></i>
             </a>
           </li>
@@ -63,6 +62,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </nav>
 
 
@@ -78,6 +78,8 @@
       <div>
         <img class="main__hero" src="img/me.jpg" alt="profile picture">
       </div>
+      <div>
+       
     </main>
 
     <!--------------Contact Form------------------->
