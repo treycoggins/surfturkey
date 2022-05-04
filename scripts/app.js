@@ -1,3 +1,4 @@
+
 // Show/hide contact modal
 const contactBtn = document.getElementById('contactBtn');
 const contactForm = document.getElementById('contactForm');

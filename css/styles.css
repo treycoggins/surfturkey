@@ -36,8 +36,12 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  gap: 40px;
-  margin-right: 20px;
+  gap: 4rem;
+}
+
+.nav .social-icons {
+  gap: 1rem;
+  margin-right: 1rem;
 }
 
 .nav__item {
@@ -69,6 +73,9 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,7 +85,7 @@ body {
   font-size: 3rem;
   color: #CDAC81;
   font-family: 'Work Sans', sans-serif;
-  margin: 100px;
+  margin: 10rem;
 }
 
 .main__title p {
