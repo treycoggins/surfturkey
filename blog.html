@@ -6,81 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>surfturkey.net - Blog</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Work+Sans:wght@100;200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
   <body>
 
-    <!-----------------NAV BAR --------------------->
-    <nav class="nav">
-      <div class="nav__list">
-        <img id="logo" src="img/surfturkey.png">
-        <a class="nav__link" href="index.html"><span id="nav__title">Surfturkey.net</span></a>
-      </div>
-      
-      <div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#"><span>Projects</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="blog.html"><span>Blog</span></a>
-        <li class="nav__item">
-          <a class="nav__link" href="#"><span>About</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#"><span id="contactBtn">Contact</span></a>
-        </li>
-      </ul>
-      </div>
+     <!-----------------NAV BAR --------------------->
+<nav class="nav">
+  <div class="nav__list">
+    <img id="logo" src="img/surfturkey_sm.png">
+    <a class="nav__link" href="index.html"><span id="nav__title">Surfturkey.net</span></a>
+  </div>
+  <div>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a class="nav__link" id="dropdownBtn" href="#"><span>Projects</span></a>
+    <ul class="dropdown__list">
+      <li class="dropdown__item"><a href="memory-game">Memory Game</a></li>
+      <li class="dropdown__item"><a href="surfturkey-old">Old Site</a></li>
+    </ul>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="blog.html"><span>Blog</span></a>
+    <li class="nav__item">
+      <a class="nav__link" href="#"><span>About</span></a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#"><span id="contactBtn">Contact</span></a>
+    </li>
+  </ul>
+  </div>
 
-      <div>
-         <!--Social Icons-->
-      <ul class="nav__list  social-icons">
-        <li class="nav__item">
-          <a href="https://www.facebook.com/umontrey" target="_blank">
-            <i class="fa fa-facebook nav__item"></i>
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="https://www.linkedin.com/in/trey-coggins-b0b185157/"target="_blank">
-            <i class="fa fa-linkedin nav__item"></i>
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="https://twitter.com/umontrey" target="_blank">
-            <i class="fa fa-twitter nav__item"></i>
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="https://github.com/treycoggins" target="_blank">
-            <i class="fa fa-github nav__item"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    </nav>
-
+  <div>
+      <!--Social Icons-->
+  <ul class="nav__list  social-icons">
+    <li class="nav__item">
+      <a href="https://www.facebook.com/umontrey" target="_blank">
+        <i class="fa fa-facebook nav__item"></i>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="https://www.linkedin.com/in/trey-coggins-b0b185157/"target="_blank">
+        <i class="fa fa-linkedin nav__item"></i>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="https://twitter.com/umontrey" target="_blank">
+        <i class="fa fa-twitter nav__item"></i>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="https://github.com/treycoggins" target="_blank">
+        <i class="fa fa-github nav__item"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+</nav>
 
     <!-------------- MAIN ------------------->
 
-    <main class="main">
-      <article class="main__blog">
-        <h3>First Blog Article</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat alias laboriosam ipsa dolore aperiam itaque sequi nulla, aspernatur voluptates eum distinctio quis esse deserunt expedita architecto reiciendis optio. Dicta suscipit eius qui officiis architecto? At.</p>
+    <main>
+      <article class="blog">
+        <div class="blog__title">
+          <h3>Learning to Code</h3>
+          <p>May 4, 2022</p>
+        </div>
+    
+        <div class="blog__post">
+        <p>Today I am hosting my personal website for the first time on the Internet! I am teaching myself how to create websites using HTML & CSS. I am also heavily studying JavaScript, JQuery, PHP, and MySQL to begin to create compelling web projects that I will deploy to this website on the Projects page. Stay tuned for more content as I continue to learn and practice my coding chops. Please take a moment to reach out to me using the contact form at the top of the page with suggestions or comments.</p>
+      </div>
       </article>
     </main>
-    <script type="text/javascript" src="scripts/app.js"></script>
+    
+
+
+
+<!-------------------- CONTACT ---------------->
+<section class="contact" id="contactForm">
+  <form action="php/contactform.php" method="post" class="contact__form">
+    <div class="contact__form-title">
+      <h3 id="contactform_title">GET IN TOUCH</h3>
+      <span class="contact__form-close" id="closeForm">X</span>
+    </div>
+    <input
+      class="contact__form-input"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your Name"
+      required
+    />
+    <input
+      class="contact__form-input"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Email Address"
+      required
+    />
+    <input
+      class="contact__form-input"
+      type="text"
+      id="phone"
+      name="phone"
+      placeholder="Phone Number"
+      required
+    />
+    <input
+      class="contact__form-input"
+      type="text"
+      id="subject"
+      name="subject"
+      placeholder="Subject"
+      required
+    />
+    <textarea
+      class="contact__form-input"
+      id="message"
+      name="message"
+      cols="30"
+      rows="7"
+      placeholder="How can I help you?"
+    ></textarea>
+    <button class="contact__form-button" type="submit" name="submit">
+      Send
+    </button>
+  </form>
+</section>
+
+
+<script type="text/javascript" src="scripts/app.js"></script>
     <script src="https://use.fontawesome.com/c1506d1679.js"></script>
   </body>
 </html>

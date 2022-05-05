@@ -1,4 +1,4 @@
-@import 'variable';
+@import 'variables';
 
 * {
   margin: 0;
@@ -27,8 +27,6 @@ body {
 } 
 
 #logo {
-  height: 90px;
-  width: 90px;
   transform: scaleX(-1) rotateZ(10deg);
   margin: 20px 20px 0 20px;
 }
@@ -43,9 +41,7 @@ body {
 
   &__list {
     display: flex;
-    justify-content: flex-end;
     gap: 6rem;
-
   }
   
 
@@ -54,7 +50,8 @@ body {
     font-size: 1.8rem;
     list-style-type: none;
     font-weight: 700;
-    gap: 4rem;
+    gap: 4rem; 
+    position: relative;
   }
 
   &__link {
@@ -62,6 +59,7 @@ body {
     text-decoration: none;
     font-family: $accent-font;
     font-size: 1.2rem;
+    
     
     span {
       color: $primary-color;
@@ -76,7 +74,7 @@ body {
 }
 
 .social-icons {
-  margin-right: 1rem;
+  margin: .5rem 1rem;
   gap: 1rem;
 
   i {
@@ -85,7 +83,29 @@ body {
 }
 
 // *************** DROP DOWN ************** //
+#dropdownBtn {
+  position: relative;
+}
 
+.dropdown {
+  
+  &__list {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    width: 10rem;
+    margin-top: 1rem;
+    background-color: $secondary-color;
+    border-radius: 0px 10px 10px 10px;
+  }
+
+  &__item a {
+  margin-left: .5rem;
+  color: $primary-color;
+  font-size: 1rem;
+  text-decoration: none;
+  }
+}
 
 // *************** MAIN ******************* //
 

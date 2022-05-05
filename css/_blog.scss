@@ -1,1 +1,30 @@
 @import 'variables';
+
+.blog {
+  width: 90%;
+  background-color: $accent-color;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  justify-content: space-between;
+  border-radius: 0 10px 10px 10px;
+
+
+  &__title {
+    font-family: $accent-font;
+    font-size: 1.6rem;
+    color: $tertiary-color;
+    margin: 0 0 1rem .5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__post {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    color: $tertiary-color;
+    line-height: 1.5;
+    margin: 0 0 0 1rem;
+  }
+}

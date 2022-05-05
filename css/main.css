@@ -7,12 +7,12 @@
 
 body {
   background-color: #0f4d7c;
-  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Comfortaa", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 62.5%;
 }
 
 #nav__title {
-  font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Audiowide", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ca4c4c;
   font-weight: 700;
   font-size: 2.5rem;
@@ -23,8 +23,6 @@ body {
 }
 
 #logo {
-  height: 90px;
-  width: 90px;
   -webkit-transform: scaleX(-1) rotateZ(10deg);
           transform: scaleX(-1) rotateZ(10deg);
   margin: 20px 20px 0 20px;
@@ -47,9 +45,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   gap: 6rem;
 }
 
@@ -59,12 +54,13 @@ body {
   list-style-type: none;
   font-weight: 700;
   gap: 4rem;
+  position: relative;
 }
 
 .nav__link {
   color: #b89600;
   text-decoration: none;
-  font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Audiowide", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -78,12 +74,33 @@ body {
 }
 
 .social-icons {
-  margin-right: 1rem;
+  margin: .5rem 1rem;
   gap: 1rem;
 }
 
 .social-icons i {
   color: #ca4c4c;
+}
+
+#dropdownBtn {
+  position: relative;
+}
+
+.dropdown__list {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  width: 10rem;
+  margin-top: 1rem;
+  background-color: #3C8DAD;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.dropdown__item a {
+  margin-left: .5rem;
+  color: #b89600;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .main {
@@ -135,7 +152,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-  font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Audiowide", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -151,7 +168,7 @@ body {
 .contact h3 {
   color: #f3e2d3;
   font-size: 2rem;
-  font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Audiowide", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 800;
   margin-bottom: 2rem;
 }
@@ -173,7 +190,7 @@ body {
 .contact__form-input {
   border: 0;
   margin: 1rem 0;
-  font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Audiowide", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 1rem;
   outline: none;
   background-color: #f3e2d3;
@@ -184,7 +201,7 @@ body {
   padding: 1.6rem;
   background: #ca4c4c;
   color: #f3e2d3;
-  font-family: "Jura", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Audiowide", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.8rem;
   border: 0;
   outline: none;
@@ -207,5 +224,44 @@ body {
 .contact__form-close {
   font-size: 2rem;
   color: #f3e2d3;
+}
+
+.blog {
+  width: 90%;
+  background-color: #ca4c4c;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0 10px 10px 10px;
+}
+
+.blog__title {
+  font-family: "Audiowide", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.6rem;
+  color: #f3e2d3;
+  margin: 0 0 1rem .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog__post {
+  font-family: "Comfortaa", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  color: #f3e2d3;
+  line-height: 1.5;
+  margin: 0 0 0 1rem;
 }
 /*# sourceMappingURL=main.css.map */
