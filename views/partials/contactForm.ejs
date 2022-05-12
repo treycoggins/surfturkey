@@ -1,0 +1,53 @@
+  <!--------------Contact Form------------------->
+
+  <section class="contact" id="contactForm">
+    <form action="php/contactform.php" method="post" class="contact__form">
+      <div class="contact__form-title">
+        <h3 id="contactform_title">GET IN TOUCH</h3>
+        <span class="contact__form-close" id="closeForm">X</span>
+      </div>
+      <input
+        class="contact__form-input"
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
+      <input
+        class="contact__form-input"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email Address"
+        required
+      />
+      <input
+        class="contact__form-input"
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Phone Number"
+        required
+      />
+      <input
+        class="contact__form-input"
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Subject"
+        required
+      />
+      <textarea
+        class="contact__form-input"
+        id="message"
+        name="message"
+        cols="30"
+        rows="7"
+        placeholder="How can I help you?"
+      ></textarea>
+      <button class="contact__form-button" type="submit" name="submit">
+        Send
+      </button>
+    </form>
+  </section>
