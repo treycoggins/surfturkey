@@ -19,7 +19,6 @@ app.get('/blog', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`LISTENING ON PORT ${PORT}!`);
-});
-
+}); 
 
 
